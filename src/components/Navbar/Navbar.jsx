@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 // import styles from './Navbar.module.css'
+import { FaUser } from 'react-icons/fa';
+
 export function Navbar() {
 
     const Navbar = styled.div`
@@ -7,80 +9,133 @@ export function Navbar() {
     *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
     font-family: 'Hind Vadodara', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
-box-sizing: border-box;
     /* background-color: ${(props) => props.bg}; */
-    width: 100vw;
     background-image: linear-gradient(to right, #54b98f , #1b8c78);
-    padding: 0.5rem 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-div:nth-child(1){
+    padding: 0.8em 1em;
+.logo{
     /* background-color: #ccc; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0.4rem 0.6rem;
-    width: 25rem;
+    justify-content: center;
+    margin-right: 2em;
 }
-div:nth-child(1) img{
-    width: 10rem;
+.logo img{
+    width: 11rem;
+    padding-right: 1em;
 }
-div:nth-child(1) input{
+.logo input{
     background-color: transparent;
     border-radius: 1.5em;
     outline: none;
     border: 1px solid ${(props) => props.clr};
     height: 2.3em;
-    /* width: 10em; */
+    color: white;
+    padding-left: 1em;
 }
- div:nth-child(1) input::placeholder{
+ .logo input::placeholder{
     color: ${(props) => props.clr};
-    padding-left: 1.5em;
+    padding-left: 0.8em;
     font-size: 0.8rem;
     font-weight: 400;
+    opacity: 1;
 }
-div:nth-child(2){
+.menu{
     /* background-color: #ccc; */
-
-}
-div:nth-child(2) ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
-div:nth-child(2) ul li{
-    margin: 0 0.8em;
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    margin: 0 0.5em;
     list-style-type: none;
     color: ${(props) => props.clr};
     font-weight: 500;
 }
-    
+.fightCovid{
+    background-image: linear-gradient(to right, #FFDA6B , #FE997C);
+    padding: 0.6em 0.8em;
+    border-radius: 2em;
+    font-size: 0.8em;
+    color: black !important;
+    font-weight: 600 !important;
+    box-shadow: 3px 3px 5px solid black;
+}
+.validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.validation select{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: -30px;
+}
+.currency select{
+    margin-left: 1.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
     
     `
+    
 
     return (
         // <div className={styles.container}>
-        <Navbar bg="#eee" clr="#eee">
-            <div>
+        <Navbar bg="white" clr="white">
+            <div className="logo">
                 <img src="/images/impactguru-white.png" alt="dggdfg" />
                 <input type="search" placeholder="Search"/>
             </div>
-            <div>
+            <div className="menu">
+                <div  className="meniItem">
                 <ul>
                     <li>Start a free fundraiser</li>
                     <li>How it works</li>
                     <li>Browes fundraiser</li>
-                    <li>Fight Covid</li>
-                    <li>User</li>
-                    <li>Price</li>
-                </ul>
+                    <li className="fightCovid">Fight Covid</li>
+                    </ul>
+                </div>
+                
+                <div className="validation">
+                    <FaUser/>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">Login</option>
+                        <option value="">Signup</option>
+                    </select>
+                </div>
+                <div className="currency">
+                    <select name="" id="">
+                        <option value="">INR</option>
+                        <option value="">USD</option>
+                        <option value="">EURO</option>
+                        <option value="">POUND</option>
+                        <option value="">POUND</option>
+                        <option value="">POUND</option>
+                        <option value="">POUND</option>
+                        <option value="">POUND</option>
+                    </select>
+                </div>
             </div>
         </Navbar>
     )
