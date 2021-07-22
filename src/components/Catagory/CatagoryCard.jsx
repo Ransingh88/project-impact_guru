@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { FaAmbulance } from 'react-icons/fa';
 
 
 
@@ -28,6 +27,8 @@ export function CatagoryCard({title,icon}) {
         box-shadow: 0px 0px 40px #aaa;
         cursor: pointer;
         transform: scale(1.01);
+        background-color: whitesmoke;
+
     }
     
     
