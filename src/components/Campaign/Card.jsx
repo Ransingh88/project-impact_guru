@@ -3,6 +3,7 @@ import { FaAngleDoubleRight } from 'react-icons/fa';
 
 
 
+
 export function Card(props) {
 
     const Card = styled.div`
@@ -36,7 +37,7 @@ export function Card(props) {
             opacity: 0.9;
         }
         .link{
-            font-size: 0.9em;
+            font-size: 0.8em;
             color: #2fa073;
             padding: 0.5em 0;
             cursor: pointer;
@@ -54,7 +55,7 @@ export function Card(props) {
         <Card>
             <img src={props.img} alt="" />
             <div>
-                <p className="head">{ props.title}</p>
+                <p className="head">{props.title}</p>
             <p className="link">Know more <FaAngleDoubleRight/></p>
             </div>
             </Card>

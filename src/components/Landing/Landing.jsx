@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import Carousel from 'react-elastic-carousel';
 
 
-export function Carousel() {
+
+export function Landing() {
     
 
     const Container = styled.div`
@@ -37,7 +39,7 @@ export function Carousel() {
     return (
         <Container>
             <div className="CarouselContainer">
-
+                
             </div>
         </Container>
     )

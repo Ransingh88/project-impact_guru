@@ -1,5 +1,7 @@
 import styled from 'styled-components'
-import {Card} from './Card'
+import { Card } from './Card'
+import {LabelHeading} from '../Common/LabelHeading'
+
 
 
 export function Campaign() {
@@ -59,7 +61,8 @@ export function Campaign() {
     return (
         <Container>
             <div className="CarouselContainer">
-                <p className="heading">Ongoing Fundraising Campaigns</p>
+                {/* <p className="heading">Ongoing Fundraising Campaigns</p> */}
+                <LabelHeading color="#303030">Ongoing Fundraising Campaigns</LabelHeading>
                 <div className="cardItem">
                
                 <Card title="When We are in this together, We can win this together " img="https://d2aq6dqxahe4ka.cloudfront.net/themes/front/images/covid19.png"/>

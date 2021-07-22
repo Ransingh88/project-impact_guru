@@ -1,15 +1,23 @@
 // import logo from './logo.svg';
-import './App.css';
-import { Navbar } from './components/Navbar/Navbar'
-import { Carousel } from './components/Carousel/Carausel'
-import {Campaign} from './components/Campaign/Campaign'
+import "./App.css";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Landing } from "./components/Landing/Landing";
+import { Campaign } from "./components/Campaign/Campaign";
+import {Catagory} from './components/Catagory/Catagory'
+
 
 function App() {
+
+
+
   return (
     <div>
       <Navbar />
-      <Carousel />
-      <Campaign/>
+      <Landing />
+      <Campaign />
+      <Catagory/>
+      
+
     </div>
   );
 }
