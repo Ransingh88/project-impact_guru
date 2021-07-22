@@ -12,7 +12,7 @@ export function Campaign() {
         padding: 0;
         box-sizing: border-box;
     }
-    height: 80vh;
+    /* height: 80vh; */
     background-image: linear-gradient(to right, #FFDA6B , #FE997C);
     /* margin-top:60px; */
     padding-top: 30px;
@@ -23,7 +23,7 @@ export function Campaign() {
     .CarouselContainer{
         /* background-color: #eee; */
         /* opacity: 0.3; */
-        height: 450px;
+        /* height: 450px; */
         text-align: center;
         padding: 20px;
         /* width: 70%; */
@@ -44,6 +44,10 @@ export function Campaign() {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
+        @media screen and (max-width:869px){
+            flex-direction: column;
+        }
     }
    
     

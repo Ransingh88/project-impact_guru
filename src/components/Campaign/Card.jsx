@@ -39,6 +39,10 @@ export function Card(props) {
             font-size: 0.9em;
             color: #2fa073;
             padding: 0.5em 0;
+            cursor: pointer;
+        }
+        .link:hover{
+            opacity: 0.5;
         }
     }
     
