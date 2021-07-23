@@ -15,7 +15,7 @@ position: relative;
 text-align: center;
 
 
-}::after{
+::after{
 content: '';
 height: 2px;
 /* width: 20%; */
@@ -24,4 +24,5 @@ background-color: ${(props)=>props.color};
 position: absolute;
 bottom: 0;
 left: calc(50% - 6%);
+}
 `

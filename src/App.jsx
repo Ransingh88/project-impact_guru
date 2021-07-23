@@ -5,7 +5,8 @@ import { Landing } from "./components/Landing/Landing";
 import { Campaign } from "./components/Campaign/Campaign";
 import { Catagory } from './components/Catagory/Catagory'
 import { CatagoryMsg } from './components/Catagory/CatagoryMessage'
-import {CountFundrais} from './components/CountFundrais/CountFundrais'
+import { CountFundrais } from './components/CountFundrais/CountFundrais'
+import {SuccessfulFundraiser} from './components/SuccessfulFundraiser/SuccessfulFundraiser'
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <Campaign />
       <Catagory/>
       <CatagoryMsg />
-      <CountFundrais/>
+      <CountFundrais />
+      <SuccessfulFundraiser/>
 
     </div>
   );

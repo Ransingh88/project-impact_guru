@@ -16,10 +16,7 @@ export function Catagory() {
       padding: 20px 6px;
       /* background-color: red; */
     }
-    .swiper-container {
-      padding: 30px 50px;
-      /* position: absolute; */
-    }
+    
   `;
 
   const breakPoints = [

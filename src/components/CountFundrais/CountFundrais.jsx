@@ -25,7 +25,7 @@ export function CountFundrais() {
     
     const ItemContainer = styled.div`
     width: 70%;
-    height: 40vh;
+    height: 50vh;
     /* background-color: #eee; */
     opacity: 1;
     padding: 10px;
