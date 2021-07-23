@@ -1,46 +1,43 @@
-import styled from 'styled-components'
-import Carousel from 'react-elastic-carousel';
-
-
+import Images from "./Images";
+import {
+  MainContainer,
+  Container,
+  MainImage,
+  ThumbnailImgContainer,
+  Content,
+} from "./LandingComps.jsx";
+import { useState } from "react";
+import {Button} from '../Common/Button'
 
 export function Landing() {
-    
+  const [selectedImg, setSelectedImg] = useState(Images[0]);
 
-    const Container = styled.div`
+  return (
+    <MainContainer>
+      <Container>
+        <MainImage>
+          <img src={selectedImg.img} alt="" className="selected" />
+        </MainImage>
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    height: 80vh;
-    background-image: linear-gradient(to right, #54b98f , #1b8c78);
-    margin-top:60px;
-    /* padding-top: 20px; */
-    display: flex;
-        justify-content: center;
-        align-items: center;
-
-    .CarouselContainer{
-        background-color: #eee;
-        /* opacity: 0.3; */
-        height: 400px;
-        
-        width: 70%;
-        /* margin: auto; */
-    }
-   
-    
-    
-
-`
-
-
-    return (
-        <Container>
-            <div className="CarouselContainer">
-                
-            </div>
-        </Container>
-    )
+        <Content>
+          <h2>Free Crowdfunding Website and Fundraising Platform</h2>
+          <ThumbnailImgContainer>
+            {Images.map((item) => (
+              <>
+                <img
+                  className={(selectedImg.img === item.img) ? "active" : ""
+                  }
+                  src={item.img}
+                  alt="images"
+                  onClick={() => setSelectedImg(item)}
+                />
+              </>
+            ))}
+          </ThumbnailImgContainer>
+                  <p>{selectedImg.text}</p>
+                  <Button bg="#fff" clr="#1b8c78" hov="#eee">START A FREE FUNDRAISER</Button>
+        </Content>
+      </Container>
+    </MainContainer>
+  );
 }
