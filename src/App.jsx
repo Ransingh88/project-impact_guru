@@ -4,7 +4,8 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Landing } from "./components/Landing/Landing";
 import { Campaign } from "./components/Campaign/Campaign";
 import { Catagory } from './components/Catagory/Catagory'
-import {CatagoryMsg} from './components/Catagory/CatagoryMessage'
+import { CatagoryMsg } from './components/Catagory/CatagoryMessage'
+import {CountFundrais} from './components/CountFundrais/CountFundrais'
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Landing />
       <Campaign />
       <Catagory/>
-      <CatagoryMsg/>
+      <CatagoryMsg />
+      <CountFundrais/>
 
     </div>
   );
