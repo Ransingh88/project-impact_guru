@@ -57,6 +57,8 @@ button{
 
 
 .box {
+    box-shadow:4px 4px 10px #ddd;
+    padding:0 15px;
         font-size: 18px;
         font-weight: 400;
   width: 100%;
@@ -73,7 +75,7 @@ margin:auto;
 }
 .hwa{
     text-align:left;
-    font-size: 20px;
+    font-size: 15px;
     line-height:3rem;
     font-weight: 500;
      margin-bottom: 30px;
@@ -135,7 +137,7 @@ export function Section5() {
 
     const handleClick = (e) => {
         axios.get(`http://localhost:3001/${e.target.value}`).then(({ data }) => {
-            console.log(e.target.className, "hi")
+           
             
             e.target.style = "border-bottom: 1px solid green;";
             const [Crowdfunding, Insurance, Loans ]= data;
@@ -151,7 +153,7 @@ export function Section5() {
             <p>Crowdfunding vs Other healthcare financing solutions</p>
              <hr style={{ marginTop:"1.5rem", width: "5rem", height:"3px" ,background:"green"} }></hr>
             <div className="grid">
-                <button value="SPEED" onClick={handleClick}>SPEED</button>
+                <button value="SPEED" onClick={handleClick} className="border">SPEED</button>
                 <button value="ELIGIBLITY" onClick={handleClick}>ELIGIBLITY</button>
                 <button value="AMOUNTDISBURSAL" onClick={handleClick}>AMOUNT DISBURSAL</button>
                 <button value="SETUPCOSTANDREPAYMENT" onClick={handleClick}>SETUPCOST AND REPAYMENT</button>
@@ -159,25 +161,23 @@ export function Section5() {
             <div className="grid1">
                 <div className="box">
                     <p className="hwa">Crowdfunding on ImpactGuru.com</p>
-
-                  
-                    {data.Crowdfunding.map((e) => {
-                        return <p><span className="arrow">✔</span>{e}</p>
-                           
-                   })}
+                    <p><span className="arrow">✔</span>   You can start a fundraiser on your own in less than 5 minutes</p>
+                    <p><span className="arrow">✔</span>You can fund the entire amount within days or even hours</p>
+   
                     
                 </div>
                 <div className="box">
                     <p className="hwa">Insurance</p>
-                    {data1.Insurance.map((e) => {
-                        return<p><span className="arrow2">✖</span>{e}</p>
-                   })}
+                
+                   <p><span className="arrow2">✖</span> Assuming you do have a health insurance, it can still take weeks to sort the paperwork, before you can claim the insurance amount.
+                        return</p>
+               
                 </div>
                 <div className="box">
                     <p className="hwa">Loans</p>
-                  {data2.Loans.map((e) => {
-                        return <p><span className="arrow2">✖</span>{e }</p>
-                   })}
+               
+                <p><span className="arrow2">✖</span>The submission of the required documents tied to the loan approval can take months</p>
+                 
                 </div>
            </div>
             

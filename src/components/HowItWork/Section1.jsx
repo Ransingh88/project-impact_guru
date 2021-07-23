@@ -4,6 +4,7 @@ import { Slide4 } from './carousel/Carousel1'
 const Set1 = styled.h2`{
    padding:30px;
    overflow-wrap: break-word;
+
    
     text-align:center;
     width:80%;
@@ -54,12 +55,24 @@ const Set1 = styled.h2`{
            border-radius: 20px;
  
     }
+    .img1{
+        position: absolute;
+        top:0;
+        z-index:-5;
+         filter: brightness(140%);
+          filter: grayscale(50%);
+         width:100%;
+         left:0;
+         height:450px;
+
+    }
  
 }`
 
 
 export function Section1() {
     return <Set1>
+        <img className="img1" src="./download.svg" alt="" />
         <div className="flex">
             <div className="box1">
                <Slide4/>
@@ -74,7 +87,7 @@ export function Section1() {
                     <div><input type="email" placeholder="Email" /></div>
                     <div><input type="number" placeholder="Number" /></div>
                    <div> <input type="text" placeholder="City" /></div>
-                    <div><button>Get free asisstance</button></div>
+                    <div><button style={{color:"white", fontWeight:"600" }}>GET FREE ASSISTANCE</button></div>
                 </div>
             </div>
             

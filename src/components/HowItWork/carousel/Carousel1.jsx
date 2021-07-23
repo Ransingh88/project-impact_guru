@@ -7,22 +7,26 @@ export function Slide4() {
     const Set12 = styled.div`{
    
      img{
-      
+       border-radius:10px;
+     
      }
      img:nth-child(1){
+       
          color:grey;
-         padding:10px;
+         margin:10px;
+         margin-bottom:20px;
           -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   width: 28%;
 }
     img:nth-child(2){
-   
+  
     width: 35%;
 }
     img:nth-child(3){
-        padding:10px;
-         
+        margin:10px;
+        margin-bottom:20px;
+          
          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
      width: 28%;
