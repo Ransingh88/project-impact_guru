@@ -1,7 +1,8 @@
 import { CardItem } from './CardItem'
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
-import {LabelHeading} from '../Common/LabelHeading'
+import { LabelHeading } from '../Common/LabelHeading'
+import {Button} from '../Common/Button'
  
 export function SuccessfulFundraiser() {
 
@@ -10,6 +11,14 @@ export function SuccessfulFundraiser() {
     padding: 2em 2em;
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    Button{
+      margin-top: 50px;
+    }
+    
     `
 
     const breakPoints = [
@@ -20,7 +29,8 @@ export function SuccessfulFundraiser() {
     { width: 1450, itemsToShow: 5 },
     { width: 1750, itemsToShow: 6 },
   ];
-    return (
+  return (
+      
         <CarouselContainer>
             <LabelHeading color="green">Successful Fundraising Stories</LabelHeading>
         <Carousel
@@ -39,7 +49,9 @@ export function SuccessfulFundraiser() {
             <CardItem/>
             <CardItem/>
             <CardItem/>
-            </Carousel>
-            </CarouselContainer>
+        </Carousel>
+        <Button>READ ALL STORIES</Button>
+      </CarouselContainer>
+
     )
 }
