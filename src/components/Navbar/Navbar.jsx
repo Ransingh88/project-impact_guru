@@ -12,7 +12,6 @@ export function Navbar() {
     box-sizing: border-box;
     font-family: 'Hind Vadodara', sans-serif;
     /* font-weight: 400; */
-    z-index: 100;
 }
 
     /* background-color: ${(props) => props.bg}; */

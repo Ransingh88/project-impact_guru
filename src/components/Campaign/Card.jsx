@@ -31,7 +31,6 @@ export function Card(props) {
         padding: 10px 20px;
 
         .head{
-            font-size: 1em;
             font-weight: 500;
             font-size: 1em;
             opacity: 0.9;

@@ -1,14 +1,7 @@
 import { LabelHeading } from "../Common/LabelHeading";
 import { CatagoryCard } from "./CatagoryCard";
 import styled from "styled-components";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
-
-// install Swiper modules
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+import Carousel from "react-elastic-carousel";
 
 export function Catagory() {
   const CatagoryContainer = styled.div`
@@ -23,65 +16,45 @@ export function Catagory() {
       padding: 20px 6px;
       /* background-color: red; */
     }
-    .swiper-container {
-      padding: 30px 50px;
-      /* position: absolute; */
-    }
+    
   `;
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 3, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 5 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 5 },
+    { width: 1750, itemsToShow: 6 },
+  ];
+
   return (
     <CatagoryContainer>
       <LabelHeading color="green">Crowdfunding Categories</LabelHeading>
       <div className="slider">
         {/* <CatagoryCard title="Emergency" icon="/icons/ambulance.png" /> */}
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          speed={4000}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          slidesPerView={5}
-          loop={true}
+
+        <Carousel
+          itemsToShow={5}
+          enableAutoPlay
+          autoPlaySpeed={3000}
+          pagination={false}
+          easing="ease"
+          transitionMs={3000}
+          breakPoints={breakPoints}
         >
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </SwiperSlide>
-        </Swiper>
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+        </Carousel>
       </div>
     </CatagoryContainer>
   );
