@@ -99,6 +99,15 @@ export function Navbar() {
     color: white;
     font-size: 1em;
 }
+
+@media screen and (max-width:1092px){
+    .validation {
+        display: none;
+    }
+    .meniItem{
+        display: none;
+    }
+}
     
     `
     

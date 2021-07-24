@@ -1,4 +1,3 @@
-import { CardItem } from '../SuccessfulFundraiser/CardItem'
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import { LabelHeading } from '../Common/LabelHeading'
