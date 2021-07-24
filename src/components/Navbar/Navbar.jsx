@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 // import styles from './Navbar.module.css'
 import { FaUser } from 'react-icons/fa';
+import styles from './Navbar.module.css'
 
 export function Navbar() {
 
@@ -11,6 +12,7 @@ export function Navbar() {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Hind Vadodara', sans-serif;
+    z-index: 100;
     /* font-weight: 400; */
 }
 
@@ -114,6 +116,8 @@ export function Navbar() {
 
     return (
         // <div className={styles.container}>
+
+        <div className={styles.mainContainer}>
         <Navbar bg="white" clr="white">
             <div className="logo">
                 <img src="/images/impactguru-white.png" alt="dggdfg" />
@@ -150,6 +154,7 @@ export function Navbar() {
                     </select>
                 </div>
             </div>
-        </Navbar>
+            </Navbar>
+            </div>
     )
 }

@@ -4,7 +4,7 @@ import axios from 'axios'
 import { useEffect } from 'react'
 
 
-const Set5 = styled.h2`{
+const Set5 = styled.h2`
     padding:30px;
    
  .flex {
@@ -114,7 +114,7 @@ margin:auto;
        
        border-bottom: 1px solid green;
   }
-}`
+`
 
 export function Section5() {
  useEffect(() => {

@@ -10,7 +10,9 @@ import {TopFundraiser} from './components/TopFundraiser/TopFundraiser'
 import { SuccessfulFundraiser } from './components/SuccessfulFundraiser/SuccessfulFundraiser'
 import {DownloadApp} from './components/DownloadApp/DownloadApp'
 import { Partner } from './components/Partner/Partner'
-
+// import { Footer } from './components/Footer/Footer'
+import { How } from './components/HowItWork/How'
+import {FundRaiser} from './components/browsingfundraiser/fundraiser'
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Landing />
       <Campaign />
       <Catagory/>
@@ -28,7 +30,12 @@ function App() {
       <TopFundraiser/>
       <SuccessfulFundraiser />
       <DownloadApp/>
-      <Partner/>
+      <Partner />
+      <Footer/> */}
+      <FundRaiser/>
+      
+      
+      
       
 
     </div>
