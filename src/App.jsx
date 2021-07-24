@@ -13,31 +13,32 @@ import { Partner } from "./components/Partner/Partner";
 import { Footer } from "./components/Footer/Footer";
 import { How } from "./components/HowItWork/How";
 import { UserForm } from "./components/UserForm/UserForm";
-// import {FundRaiser} from './components/browsingfundraiser/fundraiser'
+import {FundRaiser} from './components/browsingfundraiser/fundraiser'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 function App() {
   return (
     <Router>
-      <Link to="/">Home</Link>
-      <Link to="/start-funraiser">Start a Fundraiser</Link>
-      <Link to="/how-crowdfun-works">How it Works!</Link>
-      <Link to="/fundraisers">Browse Funraisers</Link>
+      <Link to="/" />
+      <Link to="/start-funraiser" />
+      <Link to="/how-crowdfun-works" />
+      <Link to="/fundraisers" />
       <Route path="/" exact>
         <Navbar />
         <Landing />
-        {/* <Campaign />
+        <Campaign />
         <Catagory />
         <CatagoryMsg />
         <CountFundrais />
         <TopFundraiser />
         <SuccessfulFundraiser />
         <DownloadApp />
-        <Partner /> */}
+        <Partner />
         <Footer />
       </Route>
 
       <Route path="/start-fundraiser" exact>
+        <Navbar />
         <UserForm />
       </Route>
 
@@ -48,6 +49,7 @@ function App() {
 
       <Route path="/fundraisers" exact>
         <Navbar />
+        <FundRaiser />
       </Route>
     </Router>
   );

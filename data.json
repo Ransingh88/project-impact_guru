@@ -1,0 +1,135 @@
+{
+    "patentInformation":[
+        {  "id":1,
+           "tax":"TAX BENIFITS",
+           "Emergency":"URGENT",
+           "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/Adult_Male_750-x-562.jpg",
+           "typeOfEmergency":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU",
+           "description":"please help me to raise funds for my husband treatment",
+           "raisedFund":"128901",
+           "coverdfund":"30%",
+           "sharedPerson":"by Nivedita"
+        },
+        {
+            "id":2,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/Adult_Male_750-x-562.jpg",
+            "typeOfEmergency":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU",
+            "description":"please help me to raise funds for my husband treatment",
+            "raisedFund":"118901",
+            "coverdfund":"3%",
+            "sharedPerson":"by praveena"
+         },
+        {
+            "id":3,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/help-baby-of-priyanka-kulkarni162628264132085.jpg",
+            "typeOfEmergency":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU",
+            "description":"help my new bornbaby raise funds to undergo treatment",
+            "raisedFund":"1289011",
+            "coverdfund":"35%",
+            "sharedPerson":"by Rohit kulkari"
+         },
+         {
+            "id":4,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/help-baby-of-priyanka-kulkarni162628264132085.jpg",
+            "typeOfEmergency":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU",
+            "description":"HELP MY BROTHER IN LAW FOR HIS ECMO SUPPORT FO....",
+            "raisedFund":"128451",
+            "coverdfund":"50%",
+            "sharedPerson":"by AMIT GUPTA"
+         },
+         {
+            "id":5,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/Child_Female_750-x-562.jpg",
+            "typeOfEmergency":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU",
+            "description":"please help me to raise funds for daughters treatment",
+            "raisedFund":"128901232",
+            "coverdfund":"34%",
+            "sharedPerson":"by RAM KUMAR"
+         },
+         {
+            "id":6,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/Taare-fundraiser-1626070440.jpg",
+            "typeOfEmergency":"https://i.dlpng.com/static/png/6501145_preview.png",
+            "description":"join hands with taare zameen par to raised fund f...",
+            "raisedFund":"128901",
+            "coverdfund":"3%",
+            "sharedPerson":"by janet mukhiya"
+         },
+         {
+            "id":7,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/VisionWelfareInstitute-fundraiser-1625996464.jpeg",
+            "typeOfEmergency":"https://i.dlpng.com/static/png/6501145_preview.png",
+            "description":"help VisionWelfare to raise fund for Autistic....",
+            "raisedFund":"53253",
+            "coverdfund":"10%",
+            "sharedPerson":"by Kesar Hitesh"
+         },
+         {
+            "id":8,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/HKFoundation-fundraiser-1625989837.jpeg",
+            "typeOfEmergency":"https://i.dlpng.com/static/png/6501145_preview.png",
+            "description":"Help HK Foundation To Raise Fund For Education of poor",
+            "raisedFund":"2782782",
+            "coverdfund":"40%",
+            "sharedPerson":"by HK FOUNDATION"
+         },
+         {
+            "id":9,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/UmeedForAnimalsFoundation-fundraiser-1625835606.jpg",
+            "typeOfEmergency":"https://i.dlpng.com/static/png/6501145_preview.png",
+            "description":"Help Umeed Raise Fund For Medice & Pending Medic... ",
+            "raisedFund":"128901",
+            "coverdfund":"3%",
+            "sharedPerson":"by Tanya Singh"
+         },
+         {
+            "id":10,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/SACHI-fundraiser-1625736539.jpg",
+            "typeOfEmergency":"https://i.dlpng.com/static/png/6501145_preview.png",
+            "description":"Help Children Acess Quality Healthcare with Sachi &... ",
+            "raisedFund":"1289031",
+            "coverdfund":"30%",
+            "sharedPerson":"by Apollo "
+         },
+         {
+            "id":11,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://img.youtube.com/vi/ootfKrGkORg/0.jpg",
+            "typeOfEmergency":"https://mpng.subpng.com/20200219/sjz/transparent-idea-icon-creative-icon-ipad-icon-5e4def8ee1c764.6668120315821659029248.jpg",
+            "description":"Help raise fund to empower the blind and keep safe ",
+            "raisedFund":"12890122",
+            "coverdfund":"30%",
+            "sharedPerson":"by Aadhar Bhalinge "
+         },
+         {
+            "id":12,
+            "tax":"TAX BENIFITS",
+            "Emergency":"URGENT",
+            "backgroundImage":"https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/campaigns_gallery/thumb_medium/help-ketki162408856749683.jpeg",
+            "typeOfEmergency":"https://mpng.subpng.com/20200219/sjz/transparent-idea-icon-creative-icon-ipad-icon-5e4def8ee1c764.6668120315821659029248.jpg",
+            "description":"Help me raise fund for Inovative Projects ",
+            "raisedFund":"12892201",
+            "coverdfund":"30%",
+            "sharedPerson":"by Ketki "
+         }
+    ]
+}
