@@ -1,0 +1,103 @@
+
+
+.image-div{
+    width: 100%;
+    height: 30rem;
+    border: 1px solid red;
+    background-image: url("https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/browse-fundraiser/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.collection-div{
+    width: 90%;
+    height: 10rem;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    background: rgba(129, 133, 129, 0.3) /* Green background with 30% opacity */
+}
+.text-container{
+    width: 80%;
+    height: 10rem;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.input-box{
+    width: 80%;
+    height: 3rem;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    padding: 0px 15px;
+}
+.search-box{
+    width: 90%;
+    height: 3rem;
+    background: white;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+input{
+    width: 100%;
+    height: 3rem;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    /* border-radius: 20px; */
+}
+img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+.data-box{
+    width: 80%;
+    height: 60rem;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    width: 25%;
+    height: 20rem;
+    /* border: 1px solid red; */
+    /* background: #FFFFFF; */
+    border-radius: 20px;
+}
+.patient{
+    width: 68.5%;
+    height: 60rem;
+    /* border: 1px solid red; */
+}
+.list>div{
+    border-radius: 5px;
+    height: 10vh;
+    display: flex;
+    background: #FFFFFF;
+    margin-bottom: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.selection{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.griddisplay{
+    width: 100%;
+    height: 60rem;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 3%;
+    overflow: scroll;
+}
