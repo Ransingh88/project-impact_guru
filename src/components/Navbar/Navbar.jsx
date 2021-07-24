@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 // import styles from './Navbar.module.css'
-import { FaUser } from 'react-icons/fa';
+import { FiMenu } from 'react-icons/fi';
 import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
+import { SimpleMenu } from './User'
+import {Currency} from './Currancy'
+
 
 const style1 = {
     textDecoration: "none",
@@ -19,6 +22,8 @@ export function Navbar() {
         font-family: "Hind Vadodara", sans-serif;
         z-index: 100;
         /* font-weight: 400; */
+
+        
       }
 
      
@@ -31,6 +36,11 @@ export function Navbar() {
       top: 0;
       width: 100%;
       border-bottom: 0.001em solid #ccc;
+
+      @media screen and (max-width: 1092px){
+         
+          justify-content: space-around;
+        }
       .logo {
         /* background-color: #ccc; */
         display: flex;
@@ -81,7 +91,7 @@ export function Navbar() {
         border-radius: 2em;
         font-size: 0.8em;
         color: black !important;
-        font-weight: 600 !important;
+        font-weight: 500 !important;
         box-shadow: 3px 3px 5px solid black;
       }
       .validation {
@@ -107,12 +117,25 @@ export function Navbar() {
         font-size: 1em;
       }
 
+      .bergerMenu{
+        color: white;
+        font-size: 1.5em;
+        margin-left: 1em;
+        display: none;
+      }
+
       @media screen and (max-width: 1092px) {
         .validation {
           display: none;
         }
         .meniItem {
           display: none;
+        }
+        .logo input{
+          display: none;
+        }
+        .bergerMenu{
+          display: inline-block;
         }
       }
     `;
@@ -152,24 +175,16 @@ export function Navbar() {
             </div>
 
             <div className="validation">
-              <FaUser />
-              <select name="" id="">
-                <option value=""></option>
-                <option value="">Login</option>
-                <option value="">Signup</option>
-              </select>
+              
+              <SimpleMenu/>
             </div>
+            
             <div className="currency">
-              <select name="" id="">
-                <option value="">INR</option>
-                <option value="">USD</option>
-                <option value="">EURO</option>
-                <option value="">POUND</option>
-                <option value="">POUND</option>
-                <option value="">POUND</option>
-                <option value="">POUND</option>
-                <option value="">POUND</option>
-              </select>
+             
+              <Currency/>
+            </div>
+            <div className="bergerMenu">
+              <FiMenu/>
             </div>
           </div>
         </Navbar>
