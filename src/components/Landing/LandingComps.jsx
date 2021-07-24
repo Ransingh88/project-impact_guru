@@ -69,7 +69,7 @@ p{
 
 .active{
     transform: scale(1.3);
-    border: 3px solid white  
+    border: 2px solid white  
     ;
     transition: ease 0.2s;
 }

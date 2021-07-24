@@ -21,14 +21,14 @@ function App() {
     <div>
       <Navbar />
       <Landing />
-      {/* <Campaign />
+      <Campaign />
       <Catagory/>
       <CatagoryMsg />
       <CountFundrais />
       <TopFundraiser/>
       <SuccessfulFundraiser />
       <DownloadApp/>
-      <Partner/> */}
+      <Partner/>
       
 
     </div>
