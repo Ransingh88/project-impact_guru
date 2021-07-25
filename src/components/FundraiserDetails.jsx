@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
 export const FundraiserDetails = ({ data, setData, navigation }) => {
-  const { cause, title, goal } = data;
+  const { typeOfneed, description, goal } = data;
   return (
     <div>
       <Container
@@ -33,8 +33,8 @@ export const FundraiserDetails = ({ data, setData, navigation }) => {
       >
         <TextField
           label="Cause"
-          name="cause"
-          value={cause}
+          name="typeOfneed"
+          value={typeOfneed}
           onChange={setData}
           margin="normal"
           fullWidth
@@ -43,8 +43,8 @@ export const FundraiserDetails = ({ data, setData, navigation }) => {
 
         <TextField
           label="Fundraiser Title"
-          name="title"
-          value={title}
+          name="description"
+          value={description}
           onChange={setData}
           margin="normal"
           fullWidth

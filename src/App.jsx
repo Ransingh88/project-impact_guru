@@ -14,6 +14,7 @@ import { Footer } from "./components/Footer/Footer";
 import { How } from "./components/HowItWork/How";
 import { UserForm } from "./components/UserForm/UserForm";
 import {FundRaiser} from './components/browsingfundraiser/fundraiser'
+import {Help} from "./components/Help/Help"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
@@ -46,6 +47,11 @@ function App() {
       <Route path="/fundraisers" exact>
         <Navbar />
         <FundRaiser />
+      </Route>
+
+      <Route path="/fundraisers/help-patient" exact>
+        <Navbar />
+        <Help />
       </Route>
     </Router>
   );

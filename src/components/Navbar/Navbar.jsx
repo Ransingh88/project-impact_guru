@@ -22,12 +22,9 @@ export function Navbar() {
         font-family: "Hind Vadodara", sans-serif;
         z-index: 100;
         /* font-weight: 400; */
-
-        
       }
 
-     
-       background-image: linear-gradient(to right, #54b98f , #1b8c78);
+      background-image: linear-gradient(to right, #54b98f, #1b8c78);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -37,10 +34,9 @@ export function Navbar() {
       width: 100%;
       border-bottom: 0.001em solid #ccc;
 
-      @media screen and (max-width: 1092px){
-         
-          justify-content: space-around;
-        }
+      @media screen and (max-width: 1092px) {
+        justify-content: space-around;
+      }
       .logo {
         /* background-color: #ccc; */
         display: flex;
@@ -117,7 +113,7 @@ export function Navbar() {
         font-size: 1em;
       }
 
-      .bergerMenu{
+      .bergerMenu {
         color: white;
         font-size: 1.5em;
         margin-left: 1em;
@@ -128,14 +124,21 @@ export function Navbar() {
         .validation {
           display: none;
         }
+        .currency {
+          display: none;
+        }
         .meniItem {
           display: none;
         }
-        .logo input{
+        .logo{
+          margin-left:0px
+        }
+        .logo input {
           display: none;
         }
-        .bergerMenu{
+        .bergerMenu {
           display: inline-block;
+          margin-left:-90px
         }
       }
     `;

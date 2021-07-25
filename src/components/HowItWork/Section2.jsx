@@ -1,50 +1,60 @@
 import styled from 'styled-components'
  
 
-const Section = styled.h2`{
-    padding:10px;
-    text-align:center;
-    font-weight: 300!important;
-    width:90%;
-    margin:auto;
-   
-    .text{
-        width:90%;
-        height:300px;
-       
-        text-align:right;
-        font-weight: 300!important;
-        font-family: Hind Vadodara,sans-serif;
-       font-size: medium;
+const Section = styled.h2`
+   {
+    padding: 10px;
+    text-align: center;
+    font-weight: 300 !important;
+    width: 90%;
+    margin: auto;
+
+    .text {
+      width: 90%;
+      height: 300px;
+
+      text-align: right;
+      font-weight: 300 !important;
+      font-family: Hind Vadodara, sans-serif;
+      font-size: medium;
     }
-    .flex{
-        display:grid;
-        grid-template-columns: 50% 50%;
-        margin:auto;
+    .flex {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: auto;
     }
-    .yplayer{
-      
-    justify-content: center;
-      width:100%;
-        height:282px;
-         background-image: url("https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/hiw/phone-shell.png")
-   
+    .yplayer {
+      justify-content: center;
+      width: 100%;
+      height: 282px;
+      background-image: url("https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/hiw/phone-shell.png");
     }
-    .heading{
-    text-align:center;
-        font-weight: 300!important;
+    .heading {
+      text-align: center;
+      font-weight: 300 !important;
     }
-    .mobileTv{
-        align-items: center;
-        padding:0 4rem;
-        padding-top:1rem;
-         width:78%;
-         justify-content: center;
-       }
-       .text+p{
-           margin-top:2rem;
-       }
-}`
+    .mobileTv {
+      align-items: center;
+      padding: 0 4rem;
+      padding-top: 1rem;
+      width: 78%;
+      justify-content: center;
+    }
+    .text + p {
+      margin-top: 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      .flex {
+        display: block;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .flex {
+        display: block;
+      }
+    }
+  }
+`;
 
 
 export function Section2() {

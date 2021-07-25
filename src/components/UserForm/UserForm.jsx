@@ -1,5 +1,4 @@
 import styles from "./UserForm.module.css";
-import Container from "@material-ui/core/Container";
 import { BasicDetails } from "../BasicDetails";
 import { BeneficiaryDetails } from "../BeneficiaryDetails";
 import { FundraiserDetails } from "../FundraiserDetails";
@@ -8,16 +7,23 @@ import { Expand } from "../Accordion";
 import { useForm, useStep } from "react-hooks-helper";
 
 const initial = {
-  fullname: "",
+  tax: "TAX BENIFITS",
+  Emergency: "URGENT",
+  backgroundImage:
+    "https://images.unsplash.com/photo-1605722558200-b83d78c255a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+  typeOfEmergency:
+    "https://i.pinimg.com/originals/37/19/ec/3719eceb9a3562487051c17741aad593.png",
+  sharedPerson: "",
+  typeOfneed: "",
+  description: "",
+  raisedFund: 0,
+  coverdfund: "0%",
   email: "",
   mob: "",
-  beneficiary: "",
   loan: "",
   religious: "",
   city: "",
-  cause: "",
-  title: "",
-  goal: "",
+  goal: 0,
 };
 
 const steps = [
@@ -27,22 +33,6 @@ const steps = [
   { id: "Submit" },
 ];
 
-export function NavSvg() {
-  return (
-    <>
-      <img className={styles.wavetop} src="./waveBg.png" alt="" />
-      <div className={styles.nav}>
-        {/* <Container style={{border:"1px solid"}} maxWidth="md">
-          <div className={styles.navbar}>
-            <img src="./impactguruLogo.png" alt="" />
-            <input type="text" placeholder="Search" />
-          </div>
-        </Container> */}
-        NavBar
-      </div>
-    </>
-  );
-}
 
 export function UserForm() {
   const [data, setData] = useForm(initial);
@@ -58,7 +48,6 @@ export function UserForm() {
       return (
         <div className={styles.cards}>
           <div>
-            <NavSvg />
             <p>Start a Fundraiser</p>
             <BasicDetails {...props} />
           </div>
@@ -72,7 +61,6 @@ export function UserForm() {
       return (
         <div className={styles.cards}>
           <div>
-            <NavSvg />
             <p>Beneficiary Details</p>
             <BeneficiaryDetails {...props} />
           </div>
@@ -86,7 +74,6 @@ export function UserForm() {
       return (
         <div className={styles.cards}>
           <div>
-            <NavSvg />
             <p>Fundraiser Details</p>
             <FundraiserDetails {...props} />
           </div>
@@ -100,7 +87,6 @@ export function UserForm() {
       return (
         <div className={styles.cards}>
           <div>
-            <NavSvg />
             <Submit {...props} />
           </div>
           <div className={styles.accordion}>

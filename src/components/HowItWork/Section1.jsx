@@ -12,6 +12,7 @@ const Set1 = styled.h2`{
      font-weight: 300!important;
     .flex{
         display:flex;
+        margin-top:90px;
     }
     .box1{
         text-align:left;
@@ -64,10 +65,29 @@ const Set1 = styled.h2`{
          width:100%;
          left:0;
          height:450px;
-
+        margin-top:80px
     }
+    @media only screen and (max-width: 600px) {
+        .flex{
+        display:block;
+    
+        }
+        h3{
+          font-size:15px;
+        }
+    }
+
+
+@media only screen and (min-width: 768px) {
+    .flex{
+        display:flex;
+        }
+        h3{
+          font-size:30px;
+        }
+
  
-}`
+}`;
 
 
 export function Section1() {

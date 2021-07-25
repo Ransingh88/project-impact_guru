@@ -10,7 +10,7 @@ const style1={
 }
 
 export const BasicDetails = ({ data, setData, navigation }) => {
-  const { fullname, email, mob } = data;
+  const { sharedPerson, email, mob } = data;
   return (
     <div>
       <Container maxWidth="xs" style={{ display: "flex", alignItems: "center" }}>
@@ -51,8 +51,8 @@ export const BasicDetails = ({ data, setData, navigation }) => {
         </div>
         <TextField
           label="Full Name"
-          name="fullname"
-          value={fullname}
+          name="sharedPerson"
+          value={sharedPerson}
           onChange={setData}
           margin="normal"
           fullWidth
