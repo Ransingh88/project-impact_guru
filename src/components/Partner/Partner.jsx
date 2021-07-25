@@ -65,7 +65,10 @@ export function Partner() {
             <img src="https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/home-page/fortis.png" alt="" />
             <img src="https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/home-page/apollo.png" alt="" />
             
-          </Carousel>
+        </Carousel>
+        
+
+        
           </CarouselContainer>
     </Main>
     

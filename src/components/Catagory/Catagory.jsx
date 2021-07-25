@@ -3,6 +3,11 @@ import { CatagoryCard } from "./CatagoryCard";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import {SampleNextArrow,SamplePrevArrow} from './CustomArrow'
+
 export function Catagory() {
   const CatagoryContainer = styled.div`
     background-color: white;
@@ -28,13 +33,13 @@ export function Catagory() {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  return (
+  return (<>
     <CatagoryContainer>
       <LabelHeading color="green">Crowdfunding Categories</LabelHeading>
       <div className="slider">
         {/* <CatagoryCard title="Emergency" icon="/icons/ambulance.png" /> */}
 
-        <Carousel
+        {/* <Carousel
           itemsToShow={5}
           enableAutoPlay
           autoPlaySpeed={3000}
@@ -54,8 +59,68 @@ export function Catagory() {
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-        </Carousel>
+        </Carousel> */}
+        
+        <Slider 
+        infinite={true}
+        speed={2000}
+      slidesToShow={6}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={3500}
+          nextArrow= {<SampleNextArrow />}
+          prevArrow= {<SamplePrevArrow />}
+        >
+      {/* <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          </div>
+          <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          </div>
+          <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div>
+      <div>
+        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+      </div> */}
+          
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
+          
+    </Slider>
+
+
       </div>
     </CatagoryContainer>
+      </>
   );
 }
