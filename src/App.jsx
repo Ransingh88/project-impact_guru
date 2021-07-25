@@ -42,16 +42,19 @@ function App() {
       <Route path="/how-it-works" exact>
         <Navbar />
         <How />
+        <Footer />
       </Route>
 
       <Route path="/fundraisers" exact>
         <Navbar />
         <FundRaiser />
+        <Footer />
       </Route>
 
       <Route path="/fundraisers/help-patient" exact>
         <Navbar />
         <Help />
+        <Footer />
       </Route>
     </Router>
   );

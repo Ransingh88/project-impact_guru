@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from "@material-ui/core/Container";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Submit = ({data}) => {
     console.log(data);
@@ -31,10 +32,10 @@ export const Submit = ({data}) => {
             borderRadius: 20,
             border: "none",
             boxShadow: "0 4px 10px gray",
-            cursor:"pointer"
+            cursor: "pointer",
           }}
         >
-          SEE YOUR POST
+          <Link style={{textDecoration:"none", color:"white"}} to="/fundraisers">SEE YOUR POST</Link>
         </button>
       </Container>
     );
