@@ -15,8 +15,8 @@ export function SuccessfulFundraiser() {
     const CarouselContainer = styled.div`
     
     padding: 2em 2em;
-    width: 90%;
-    /* margin: auto; */
+    width: 80%;
+    margin: auto; 
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -24,6 +24,8 @@ export function SuccessfulFundraiser() {
 
     Button{
       margin-top: 50px;
+      width: 200px;
+      margin: auto;
     }
     
     `
@@ -89,7 +91,7 @@ export function SuccessfulFundraiser() {
       <Slider 
         infinite={true}
         speed={2000}
-      slidesToShow={5}
+      slidesToShow={4}
           slidesToScroll={1}
           autoplay={true}
           autoplaySpeed={3500}

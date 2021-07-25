@@ -21,37 +21,40 @@ class PatientList extends Component {
       });
   }
   render() {
+    console.log(this.props);
     const { Data } = this.state;
-    const pataientData = Data.slice(0, 1);
+    const pataientData = Data.slice(0, this.props.load);
     return (
       <div className={styles.griddisplay}>
         {pataientData.map((el) => (
           <div
             key={el.id}
             style={{
-              height: "70vh",
+              height: "auto",
               background: "#FFFFFF",
               boxShadow: " 0 4px 8px 0 rgba(0,0,0,0.2)",
               transition: "0.3s",
+              padding: 10,
+              borderRadius: 10,
             }}
           >
             <div
               style={{
                 width: "100%",
-                height: "30vh",
+                height: 150,
                 border: "1px solid white",
                 backgroundImage: `url(${el.backgroundImage})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
+                borderRadius: 10,
+                cursor: "pointer",
               }}
             >
               <div
                 style={{
-                  width: "35%",
-                  height: "4vh",
-                  border: "1px solid white",
+                  width: "38%",
                   borderTopLeftRadius: "10px",
-                  borderBottomRightRadius: "20px",
+                  borderBottomRightRadius: "10px",
                   float: "left",
                   background: "#21936A",
                 }}
@@ -59,8 +62,9 @@ class PatientList extends Component {
                 <p
                   style={{
                     color: "#FFFFFF",
-                    lineHeight: "7px",
-                    fontSize: "11px",
+                    lineHeight: "4px",
+                    letterSpacing: 1,
+                    fontSize: "9px",
                     fontWeight: "bolder",
                   }}
                 >
@@ -69,11 +73,9 @@ class PatientList extends Component {
               </div>
               <div
                 style={{
-                  width: "35%",
-                  height: "4vh",
-                  border: "1px solid white",
+                  width: "32%",
                   borderTopRightRadius: "10px",
-                  borderBottomLeftRadius: "20px",
+                  borderBottomLeftRadius: "10px",
                   float: "right",
                   background: "#E63427",
                 }}
@@ -81,8 +83,9 @@ class PatientList extends Component {
                 <p
                   style={{
                     color: "#FFFFFF",
-                    lineHeight: "7px",
-                    fontSize: "11px",
+                    lineHeight: "4px",
+                    letterSpacing: 1,
+                    fontSize: "9px",
                     fontWeight: "bolder",
                   }}
                 >
@@ -94,10 +97,10 @@ class PatientList extends Component {
                   width: "35px",
                   height: "35px",
                   borderRadius: "50%",
-                  border: "1px solid white",
-                  marginTop: "75%",
-                  marginLeft: "40%",
-                  background: "#FFFFFF",
+                  position: "relative",
+                  left: 90,
+                  marginTop: "135px",
+                  background: "#FFF",
                 }}
               >
                 <img src={el.typeOfEmergency} alt="" />
@@ -115,8 +118,8 @@ class PatientList extends Component {
               <p
                 style={{
                   lineHeight: "normal",
-                  fontWeight: "bold",
                   color: "#OOO",
+                  fontSize: 15,
                 }}
               >
                 {el.description}
@@ -124,131 +127,95 @@ class PatientList extends Component {
             </div>
             <div
               style={{
-                width: "50%",
-                height: "4vh",
-                border: "1px solid white",
                 margin: "auto",
-                marginTop: "20px",
+                color: "#888",
+                fontSize: 13,
               }}
             >
-              <p style={{ lineHeight: "1px" }}>{el.sharedPerson}</p>
+              <p>{el.sharedPerson}</p>
             </div>
             <div
               style={{
-                width: "30%",
-                height: "4.7vh",
+                height: "25px",
                 border: "1px solid gray",
-                marginTop: "15px",
                 marginLeft: "15%",
                 float: "left",
                 borderRadius: "20px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                padding: "0 10px",
+                marginRight: 3,
               }}
             >
               <img
-                src="https://png.pngtree.com/element_our/md/20180626/md_5b321c98efaa6.jpg"
+                src="https://image.flaticon.com/icons/png/512/1384/1384023.png"
                 style={{
-                  width: "25px",
-                  height: "25px",
-                  borderRadius: "50%",
-                  marginLeft: "1%",
+                  width: "15px",
+                  height: "15px",
                 }}
-              ></img>
-              <p style={{ lineHeight: "1px" }}>Share</p>
+              />
+              <p style={{ marginLeft: 5, fontSize: 14 }}>Share</p>
             </div>
             <div
               style={{
-                width: "30%",
-                height: "4.7vh",
+                height: "25px",
                 border: "1px solid gray",
-                marginTop: "15px",
-                marginLeft: "10%",
                 float: "left",
                 borderRadius: "20px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                padding: "0 8px",
+                marginLeft: 3,
               }}
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvplkZzQ3Bio6wLq655CmMgVotXWqXp6U8dpRG00XIErCDrV-IzOWE_xejhiF1gFlBFDA&usqp=CAU"
+                src="https://image.flaticon.com/icons/png/512/2111/2111564.png"
                 style={{
-                  width: "25px",
-                  height: "25px",
-                  borderRadius: "50%",
-                  marginLeft: "1%",
+                  width: "15px",
+                  height: "15px",
                 }}
               ></img>
-              <p style={{ lineHeight: "1px" }}>Share</p>
+              <p style={{ marginLeft: 5, fontSize: 14 }}>Share</p>
             </div>
-            <div
-              style={{
-                width: "90%",
-                height: "8vh",
-                border: "1px solid white",
-                clear: "both",
-                margin: "auto",
-                marginTop: "50px",
-              }}
-            >
+            <div>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
                   width: "100%",
-                  height: "3vh",
+                  height: 20,
+                  fontSize: 13,
+                  color: "#45ad89",
                 }}
               >
-                <p>&#8377;{el.raisedFund}raised</p>
+                <p>
+                  &#8377; {el.raisedFund}{" "}
+                  <span style={{ fontSize: 10 }}>Raised</span>
+                </p>
                 <p>{el.coverdfund}</p>
               </div>
               <div
                 style={{
-                  width: "100%",
-                  height: "1vh",
-                  border: "1px solid white",
+                  height: 7,
                   marginTop: "15px",
-                  borderRadius: "5px",
-                  background: "#F7F7F7",
-                  boxShadow: " 0 4px 8px 0 rgba(0,0,0,0.2)",
-                  transition: "0.3s",
+                  borderRadius: 10,
+                  background: "#ddd",
                 }}
               >
                 <div
                   style={{
                     width: `${el.coverdfund}`,
                     backgroundColor: "#21936A",
-                    height: "1vh",
+                    height: 7,
                     boxShadow: " 0 4px 8px 0 rgba(0,0,0,0.2)",
-                    transition: "0.3s",
+                    borderRadius: 10,
                   }}
                 ></div>
               </div>
             </div>
-            <div
-              style={{
-                width: "90%",
-                height: "7vh",
-                border: "1px solid white",
-                margin: "auto",
-                clear: "both",
-                marginTop: "5px",
-                borderRadius: "50px",
-                backgroundColor: "#FF8502",
-              }}
-            >
-              <h4
-                style={{
-                  lineHeight: "10px",
-                  color: "white",
-                  fontWeight: "bolder",
-                }}
-              >
-                DONATE
-              </h4>
-            </div>
+            <button className={styles.donatebtn} >DONATE</button>
           </div>
         ))}
       </div>

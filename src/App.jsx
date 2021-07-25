@@ -14,15 +14,11 @@ import { Footer } from "./components/Footer/Footer";
 import { How } from "./components/HowItWork/How";
 import { UserForm } from "./components/UserForm/UserForm";
 import {FundRaiser} from './components/browsingfundraiser/fundraiser'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
   return (
     <Router>
-      <Link to="/" />
-      <Link to="/start-funraiser" />
-      <Link to="/how-crowdfun-works" />
-      <Link to="/fundraisers" />
       <Route path="/" exact>
         <Navbar />
         <Landing />

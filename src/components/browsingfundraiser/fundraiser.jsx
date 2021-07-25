@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import { useState } from "react";
 import PatientList from "./PatientList";
 export function FundRaiser() {
+  const [num, setNum] = useState(5)
   return (
     <div className={styles.mainCont} style={{ background: "#F7F7F7" }}>
       <div className={styles.imagediv}>
@@ -43,9 +44,9 @@ export function FundRaiser() {
       </div>
       <div className={styles.inputbox}>
         <div className={styles.searchbox}>
-          <input type="text" placeholder="Search for Fundriser" />
+          <input type="text" placeholder="Search for Fundraiser" />
           <button
-            style={{ background: "white", border: "none", height: "7.2vh" }}
+            style={{ background: "white", border: "none" }}
           >
             <img
               style={{ width: 25 }}
@@ -74,49 +75,31 @@ export function FundRaiser() {
       <div className={styles.databox}>
         <div className={styles.list}>
           <div>
-            <img
-              style={{ marginLeft: "6%", marginTop: "4vh" }}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU"
-            ></img>
-            <p style={{ lineHeight: "40px", marginLeft: "4%" }}>Medical</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoEDl3Y3hs0ctTe_HGnywwT-BiKICdFfA&usqp=CAU"></img>
+            <p>Medical</p>
           </div>
           <div>
-            <img
-              style={{ marginLeft: "6%", marginTop: "4vh" }}
-              src="https://i.pinimg.com/originals/37/19/ec/3719eceb9a3562487051c17741aad593.png"
-            ></img>
-            <p style={{ lineHeight: "40px", marginLeft: "4%" }}>NGO</p>
+            <img src="https://i.pinimg.com/originals/37/19/ec/3719eceb9a3562487051c17741aad593.png"></img>
+            <p>NGO</p>
           </div>
           <div>
-            <img
-              style={{ marginLeft: "6%", marginTop: "4vh" }}
-              src="https://static.thenounproject.com/png/104631-200.png"
-            ></img>
-            <p style={{ lineHeight: "40px", marginLeft: "4%" }}>
-              Personal Cause
-            </p>
+            <img src="https://static.thenounproject.com/png/104631-200.png"></img>
+            <p>Personal Cause</p>
           </div>
           <div>
-            <img
-              style={{ marginLeft: "6%", marginTop: "4vh" }}
-              src="https://mpng.subpng.com/20200219/sjz/transparent-idea-icon-creative-icon-ipad-icon-5e4def8ee1c764.6668120315821659029248.jpg"
-            ></img>
-            <p style={{ lineHeight: "40px", marginLeft: "4%" }}>
-              Creative Ideas
-            </p>
+            <img src="https://mpng.subpng.com/20200219/sjz/transparent-idea-icon-creative-icon-ipad-icon-5e4def8ee1c764.6668120315821659029248.jpg"></img>
+            <p>Creative Ideas</p>
           </div>
           <div>
-            <img
-              style={{ marginLeft: "6%", marginTop: "4vh" }}
-              src="https://image.flaticon.com/icons/png/512/2162/2162957.png"
-            ></img>
-            <p style={{ lineHeight: "40px", marginLeft: "4%" }}>Acid Attacks</p>
+            <img src="https://image.flaticon.com/icons/png/512/2162/2162957.png"></img>
+            <p>Acid Attacks</p>
           </div>
         </div>
         <div className={styles.patient}>
-          <PatientList />
+          <PatientList load={num} />
         </div>
       </div>
+      <button className={styles.loadbtn} onClick={() => setNum(num + 2)}>LOAD MORE</button>
     </div>
   );
 }

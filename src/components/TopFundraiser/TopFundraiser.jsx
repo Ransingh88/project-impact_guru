@@ -1,6 +1,5 @@
 import { CardItem } from '../SuccessfulFundraiser/CardItem'
 import styled from "styled-components";
-import Carousel from "react-elastic-carousel";
 import { LabelHeading } from '../Common/LabelHeading'
 import { Button } from '../Common/Button'
 
@@ -17,32 +16,35 @@ export function TopFundraiser() {
     background-color: whitesmoke;
     `
     const CarouselContainer = styled.div`
-    /* background-color: whitesmoke; */
-    padding: 2em 2em;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
+      /* background-color: whitesmoke; */
+      padding: 2em 2em;
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
 
-    Button{
-      margin-top: 50px;
-    }
-    .TopButtons{
+      
+      .TopButtons {
         display: flex;
+        margin-top: 50px;
         justify-content: center;
         align-items: center;
-    }
-    `
+      }
+
+      .TopButtons h5{
+        margin: 0 15px
+      }
+    `;
 
     const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 3, itemsToScroll: 2, pagination: false },
-    { width: 850, itemsToShow: 4 },
-    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
-    { width: 1450, itemsToShow: 5 },
-    { width: 1750, itemsToShow: 6 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 3, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 4 },
+    { width: 1750, itemsToShow: 5 },
   ];
   return (
       <Main >
@@ -69,7 +71,7 @@ export function TopFundraiser() {
         <Slider 
         infinite={true}
         speed={2000}
-      slidesToShow={5}
+      slidesToShow={4}
           slidesToScroll={1}
           autoplay={true}
           autoplaySpeed={3500}

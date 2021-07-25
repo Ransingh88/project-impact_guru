@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { FaSignOutAlt,FaUserPlus,FaUser } from 'react-icons/fa';
 import { RiArrowDownSLine } from 'react-icons/ri';
+import { Link } from "react-router-dom";
 
 
 export function SimpleMenu() {
@@ -21,8 +22,14 @@ export function SimpleMenu() {
 
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} style={{color:'white'}}>
-        <FaUser/><RiArrowDownSLine/>
+      <Button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        onClick={handleClick}
+        style={{ color: "white" }}
+      >
+        <FaUser />
+        <RiArrowDownSLine />
       </Button>
       <Menu
         id="simple-menu"
@@ -31,9 +38,14 @@ export function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        
-        <MenuItem onClick={handleClose}><FaSignOutAlt/>&nbsp; Login</MenuItem>
-        <MenuItem onClick={handleClose}><FaUserPlus/>&nbsp; Signup</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <FaSignOutAlt />
+          &nbsp; Login
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <FaUserPlus />
+          <Link style={{textDecoration: "none", color: "black"}} to="/start-fundraiser">&nbsp; Signup</Link>
+        </MenuItem>
       </Menu>
     </div>
   );
