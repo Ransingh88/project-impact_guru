@@ -12,15 +12,26 @@ Today, we know better. We know that more healthcare financing options need to be
 This project is clone of **[Impactguru](https://www.impactguru.com/)** website which is a fundraiser website where it Make Healthcare Affordable To Save Lives Today, While Securing Families For A Better Tomorrow.<br/>
 We are creating innovative technology and finance solutions to empower Indians to raise funds for medical emergencies and critical illnesses and raise funds for a range of social and personal causes. Our platform has been used by lakhs to change lives through timely contributions, fundraisers and actions.
 
-## Contibutors:
+## Contributors:
 * **Debasish Ransingh** <br/> 
- [Ransingh88](https://github.com/Ransingh88 | [email](debasish_nj2_082@masai.school)
+ [Ransingh88](https://github.com/Ransingh88) | [email](debasish_nj2_082@masai.school)
 * **Subham Abhishek Jaiswal** <br/>
  [Subham-Abhishek](https://github.com/Subham-Abhishek) | [email]()
  * **Ranjsn Giri** <br/>
  [ranjan1o](https://github.com/ranjan1o) | [email]()
  * **Subhash Jha** <br/>
  [subhash238](https://github.com/subhash238) | [email]()
+ 
+ 
+ 
+## Technology Used:
+
+Language | Library
+------------ | -------------
+React JS | Fontawesome [Link](https://fontawesome.com/)
+HTML | Fontawesome [Link](https://fontawesome.com/)
+CSS | Google Fonts [Link](https://fonts.google.com/)
+JavaScript | 
 
 ## Getting Started with Create React App
 
