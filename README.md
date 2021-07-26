@@ -39,6 +39,16 @@ We are creating innovative technology and finance solutions to empower Indians t
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Clone or Download
+
+* Clone the project to your local system.
+
+```bash
+git clone https://github.com/Ransingh88/project-impact_guru.git
+```
+**or**
+* Download the Zip file
+
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install node Module.
