@@ -32,6 +32,13 @@ We are creating innovative technology and finance solutions to empower Indians t
 #### Library:
 **FontAwesome, GoogleFont, Mateial UI, Axios, React, react-dom, react-elastic-carousel, react-hooks-helper, react-icons, react-multi-carousel, react-router-dom, react-scripts, react-slick, slick-carousel, styled-components, web-vitals**
 
+
+
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install node Module.
@@ -39,11 +46,6 @@ Use the package manager [npm](https://www.npmjs.com/) to install node Module.
 ```bash
 npm install
 ```
-
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
