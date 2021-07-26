@@ -26,9 +26,12 @@ We are creating innovative technology and finance solutions to empower Indians t
  
 ## Technology Used:
 
-Language | Library
------------- | -------------
-React JS | Fontawesome [Link](https://fontawesome.com/)
+#### Language:
+**React JS, JavaScript, HTML, CSS**
+
+Language | Library 
+------------ | ------------- 
+React JS | Fontawesome [Link](https://fontawesome.com/) 
 HTML | Fontawesome [Link](https://fontawesome.com/)
 CSS | Google Fonts [Link](https://fonts.google.com/)
 JavaScript | 
@@ -103,3 +106,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<img src="https://github.com/ks-1007/Project-Sephora/blob/master/webpage.png" alt="Webpage"  width="1000">
