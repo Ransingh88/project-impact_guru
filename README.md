@@ -29,12 +29,8 @@ We are creating innovative technology and finance solutions to empower Indians t
 #### Language:
 **React JS, JavaScript, HTML, CSS**
 
-Language | Library 
------------- | ------------- 
-React JS | Fontawesome [Link](https://fontawesome.com/) 
-HTML | Fontawesome [Link](https://fontawesome.com/)
-CSS | Google Fonts [Link](https://fonts.google.com/)
-JavaScript | 
+#### Library:
+**FontAwesome, GoogleFont, Mateial UI, Axios, React, react-dom, react-elastic-carousel, react-hooks-helper, react-icons, react-multi-carousel, react-router-dom, react-scripts, react-slick, slick-carousel, styled-components, web-vitals**
 
 ## Getting Started with Create React App
 
