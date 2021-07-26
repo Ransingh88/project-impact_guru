@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Project-Impact_guru
+
+## Description:
+**Make Healthcare Affordable To Save Lives Today, While Securing Families For A Better Tomorrow.** <br/>
+
+We knew this. Even before the pandemic, we knew that a large number of Indians struggled to pay for critical health costs, that very few had insurance to fight health emergencies, and that one critical illness could deplete the entire family’s financial health, sometimes even burying them in debt for years. More than 50 million Indians have already been pushed into poverty because of healthcare related costs.<br/>
+
+Which is why, in 2014, we launched ImpactGuru to offer a more compassionate solution to those fighting critical illnesses and to empower individuals from around the globe to help those in need.<br/>
+
+Today, we know better. We know that more healthcare financing options need to be accessible to all Indians, that health emergencies arrive more often than we think and we are less prepared than we believe, and that we are all vulnerable regardless of our economic status. Which is why, we are going beyond creating a platform, to building innovations that can help a farmer save his new-born as well as a doctor who can no longer pay for his wife’s cancer treatment.<br/>
+
+This project is clone of **[Impactguru](https://www.impactguru.com/)** website which is a fundraiser website where it Make Healthcare Affordable To Save Lives Today, While Securing Families For A Better Tomorrow.<br/>
+We are creating innovative technology and finance solutions to empower Indians to raise funds for medical emergencies and critical illnesses and raise funds for a range of social and personal causes. Our platform has been used by lakhs to change lives through timely contributions, fundraisers and actions.
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
