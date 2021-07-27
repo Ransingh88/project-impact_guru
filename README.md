@@ -147,6 +147,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## Landing page:
-
-<img src="https://github.com/Ransingh88/project-impact_guru/blob/main/public/images/impact%20guru.png" alt="Webpage"  >
