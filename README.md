@@ -33,7 +33,8 @@ We are creating innovative technology and finance solutions to empower Indians t
 **FontAwesome, GoogleFont, Mateial UI, Axios, React, react-dom, react-elastic-carousel, react-hooks-helper, react-icons, react-multi-carousel, react-router-dom, react-scripts, react-slick, slick-carousel, styled-components, web-vitals**
 
 
-
+#Here is some screenshots  of our website
+![Screenshot (360)](https://user-images.githubusercontent.com/84707304/127096547-19ff9a97-f062-455a-996e-4a6d01eea6c8.png)
 
 ## Getting Started with Create React App
 
