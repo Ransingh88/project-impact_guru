@@ -34,24 +34,24 @@ We are creating innovative technology and finance solutions to empower Indians t
 
 
 ## Here is some screenshots  of our website
-Home page:
+# Home page:
 ![Screenshot (360)](https://user-images.githubusercontent.com/84707304/127096547-19ff9a97-f062-455a-996e-4a6d01eea6c8.png)
 
 ![Screenshot (368)](https://user-images.githubusercontent.com/84707304/127097031-96a419ba-33db-434a-8019-e40025cd1f9f.png)
 
 ![Screenshot (369)](https://user-images.githubusercontent.com/84707304/127096978-b23cd972-9edb-43d6-a889-ae4a1feb8c78.png)
 
-How It work page:
+ # How It work page:
 ![Screenshot (361)](https://user-images.githubusercontent.com/84707304/127097284-2790920d-5d7d-434f-81cd-272ffe62ae75.png)
 ![Screenshot (370)](https://user-images.githubusercontent.com/84707304/127097292-c90d1185-bad9-4528-8bac-c01a2d4e8fc9.png)
 ![Screenshot (365)](https://user-images.githubusercontent.com/84707304/127097302-92a6a5af-0bb9-4233-a4fe-c63936608e54.png)
 
 
-Browser Fundraiser page
+ # Browser Fundraiser page
 ![Screenshot (363)](https://user-images.githubusercontent.com/84707304/127097453-0920b50c-ad58-49a3-99dc-07c8ccafab00.png)
 ![Screenshot (371)](https://user-images.githubusercontent.com/84707304/127097459-0d77d48b-3fa0-4907-917a-1857e8780ff8.png)
 
-Start A free fundraiser page:
+ # Start A free fundraiser page:
 
 ![Screenshot (362)](https://user-images.githubusercontent.com/84707304/127097636-f76421f8-4d13-4f6c-b31d-14b22511914d.png)
 ![Screenshot (372)](https://user-images.githubusercontent.com/84707304/127097641-e994a6f0-1ecc-4ee2-80cb-c7507332e195.png)
