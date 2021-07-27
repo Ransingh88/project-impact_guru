@@ -16,7 +16,7 @@ We are creating innovative technology and finance solutions to empower Indians t
 * **Debasish Ransingh** <br/> 
  [Ransingh88](https://github.com/Ransingh88) | [email](debasish_nj2_082@masai.school)
 * **Subham Abhishek Jaiswal** <br/>
- [Subham-Abhishek](https://github.com/Subham-Abhishek) | [email]()
+ [Subham-Abhishek](https://github.com/Subham-Abhishek) | [email](abhi950727@gmail.com)
  * **Ranjsn Giri** <br/>
  [ranjan1o](https://github.com/ranjan1o) | [email]()
  * **Subhash Jha** <br/>
