@@ -63,10 +63,25 @@ git clone https://github.com/Ransingh88/project-impact_guru.git
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/) to install node Module.
+* **Use the package manager [npm](https://www.npmjs.com/) to install node Module.**
 
 ```bash
 npm install
+```
+
+* **To start the server**
+```bash
+npm start
+```
+or
+
+```bash
+npm run start
+```
+
+* **To start JSON server**
+```bash
+json-server --watch data.json
 ```
 
 ## Available Scripts
