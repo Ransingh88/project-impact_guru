@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const responsive = {
+const responsive2 = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
@@ -27,7 +27,7 @@ const responsive = {
 export function Slide3({ data ,data1}) {
   console.log(data[0]);
     return <>
-   <Carousel responsive={responsive} autoPlay={true}  containerClass="carousel-container" renderDotsOutside={true} showDots={true}   autoPlaySpeed={2000} draggable={false} transitionDuration={500}   infinite={true}>
+   <Carousel responsive={responsive2} autoPlay={true}  containerClass="carousel-container" renderDotsOutside={true} showDots={true}   autoPlaySpeed={2000} draggable={false} transitionDuration={500}   infinite={true}>
         <div className="cart"><img src={data[0]} alt="" />
           <hr style={{ width: "70%" ,alignItems:"center",color:"grey"}}></hr>
                 <h4>{data1[0]}</h4>
