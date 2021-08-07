@@ -3,11 +3,7 @@ import { Card } from './Card'
 import {LabelHeading} from '../Common/LabelHeading'
 
 
-
-export function Campaign() {
-    
-
-    const Container = styled.div`
+const Container = styled.div`
 
     *{
         margin: 0;
@@ -46,18 +42,17 @@ export function Campaign() {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        /* margin-top: 50px; */
 
         @media screen and (max-width:869px){
             flex-direction: column;
         }
     }
    
+`;
+
+export function Campaign() {
     
-    
-
-`
-
-
     return (
         <Container>
             <div className="CarouselContainer">

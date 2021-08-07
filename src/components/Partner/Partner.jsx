@@ -2,12 +2,10 @@ import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import { LabelHeading } from '../Common/LabelHeading'
 import { FreeFundComp, Container } from './FreeFundraiserComp'
-import {Button} from '../Common/Button'
- 
-export function Partner() {
+import { Button } from '../Common/Button'
 
 
-    const Main = styled.div`
+const Main = styled.div`
     background-color: white;
     img{
         width: 200px;
@@ -25,6 +23,11 @@ export function Partner() {
     align-items: center;
 
     `
+ 
+export function Partner() {
+
+
+    
 
     const breakPoints = [
     { width: 1, itemsToShow: 1 },

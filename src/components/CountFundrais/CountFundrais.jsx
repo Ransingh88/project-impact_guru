@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export function CountFundrais() {
-  const ItemMainContainer = styled.div`
+const ItemMainContainer = styled.div`
     opacity: 0.9;
     /* height: 50vh; */
     background-image: url("https://p1.pxfuel.com/preview/584/998/534/colorful-test-tubes-bottles-glass-science-lab-laboratory.jpg");
@@ -22,8 +21,8 @@ export function CountFundrais() {
         font-size: 0.8em;
     }
   `;
-    
-    const ItemContainer = styled.div`
+
+  const ItemContainer = styled.div`
     width: 70%;
     height: 50vh;
     /* background-color: #eee; */
@@ -64,6 +63,12 @@ export function CountFundrais() {
     }
     
     `
+
+export function CountFundrais() {
+  
+    
+    
+    
   return (
     <ItemMainContainer>
           <Container>

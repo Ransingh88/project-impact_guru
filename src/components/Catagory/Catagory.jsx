@@ -8,8 +8,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {SampleNextArrow,SamplePrevArrow} from './CustomArrow'
 
-export function Catagory() {
-  const CatagoryContainer = styled.div`
+// import Carousel from 'react-multi-carousel';
+// import 'react-multi-carousel/lib/styles.css';
+
+
+const CatagoryContainer = styled.div`
     background-color: white;
     padding: 30px 20px 20px 20px;
     position: relative;
@@ -24,6 +27,9 @@ export function Catagory() {
     
   `;
 
+export function Catagory() {
+  
+
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 3, itemsToScroll: 2, pagination: false },
@@ -32,6 +38,45 @@ export function Catagory() {
     { width: 1450, itemsToShow: 5 },
     { width: 1750, itemsToShow: 6 },
   ];
+
+  const bp = [
+    {
+          breakpoint: 1184,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
+
+  
 
   return (<>
     <CatagoryContainer>
@@ -68,36 +113,11 @@ export function Catagory() {
           slidesToScroll={1}
           autoplay={true}
           autoplaySpeed={3500}
+          responsive={bp}
           nextArrow= {<SampleNextArrow />}
           prevArrow= {<SamplePrevArrow />}
         >
-      {/* <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </div>
-          <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-          </div>
-          <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div>
-      <div>
-        <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
-      </div> */}
+    
           
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
@@ -117,7 +137,7 @@ export function Catagory() {
           <CatagoryCard title="Emergency" icon="/icons/ambulance.png" />
           
     </Slider>
-
+      
 
       </div>
     </CatagoryContainer>

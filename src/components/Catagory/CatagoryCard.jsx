@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-
-
-export function CatagoryCard({title,icon}) {
-
-    const Card = styled.div`
+const Card = styled.div`
     height: 150px;
     width: 150px;
     border-radius: 0.8em;
@@ -35,12 +31,16 @@ export function CatagoryCard({title,icon}) {
     
     
     `
+
+export function CatagoryCard({title,icon}) {
+
+    
     
     return (
         
         <Card>
             {/* <FaAmbulance color="#4ec067" fontSize="5rem" /> */}
-            <img src={ icon } alt="" width />
+            <img src={ icon } alt="jgjg" />
             <p>{ title }</p>
             
         </Card>

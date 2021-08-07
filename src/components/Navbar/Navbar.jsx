@@ -4,7 +4,8 @@ import { FiMenu } from 'react-icons/fi';
 import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
 import { SimpleMenu } from './User'
-import {Currency} from './Currancy'
+import { Currency } from './Currancy'
+import './NabarStyle.css'
 
 
 const style1 = {
@@ -12,9 +13,7 @@ const style1 = {
     color: "white"
 }
 
-export function Navbar() {
-    console.log("Hello");
-    const Navbar = styled.div`
+const Navbarr = styled.div`
       * {
         padding: 0;
         margin: 0;
@@ -142,13 +141,17 @@ export function Navbar() {
         }
       }
     `;
+
+export function Navbar() {
+    // console.log("Hello");
+    
     
 
     return (
       // <div className={styles.container}>
 
       <div className={styles.mainContainer}>
-        <Navbar bg="white" clr="white">
+        <Navbarr bg="white" clr="white">
           <div className="logo">
             <Link style={style1} to="/">
               <img src="/images/impactguru-white.png" alt="dggdfg" />
@@ -190,7 +193,7 @@ export function Navbar() {
               <FiMenu/>
             </div>
           </div>
-        </Navbar>
+        </Navbarr>
       </div>
     );
 }

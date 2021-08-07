@@ -7,7 +7,8 @@ import {
   Content,
 } from "./LandingComps.jsx";
 import { useState } from "react";
-import {Button} from '../Common/Button'
+import { Button } from '../Common/Button'
+import {v4 as uuid} from 'uuid'
 
 export function Landing() {
   const [selectedImg, setSelectedImg] = useState(Images[0]);
@@ -23,18 +24,19 @@ export function Landing() {
           <h2>Free Crowdfunding Website and Fundraising Platform</h2>
           <ThumbnailImgContainer>
             {Images.map((item) => (
-              <>
+              <div key={uuid()}>
                 <img
                   className={(selectedImg.img === item.img) ? "active" : ""
                   }
                   src={item.img}
                   alt="images"
                   onClick={() => setSelectedImg(item)}
+                  
                 />
-              </>
+              </div >
             ))}
           </ThumbnailImgContainer>
-                  <p>{selectedImg.text}</p>
+                  <p >{selectedImg.text}</p>
                   <Button bg="#fff" clr="#1b8c78" hov="#eee">START A FREE FUNDRAISER</Button>
         </Content>
       </Container>

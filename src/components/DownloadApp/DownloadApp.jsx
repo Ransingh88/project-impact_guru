@@ -6,9 +6,7 @@ import { CompareComp } from './Compare'
 import {Button} from '../Common/Button'
 
 
-export function DownloadApp() {
-
-    const MainContainer = styled.div`
+const MainContainer = styled.div`
     /* height: 60vh; */
     background-image: linear-gradient(to right, #ffc809 , #ffc809);
     display: flex;
@@ -16,6 +14,10 @@ export function DownloadApp() {
     align-items: center;
     position: relative;
     padding:2em;
+
+     @media screen and (max-width: 1128px){
+         flex-direction: column;
+     }
 
 
     .gridIcons{
@@ -63,6 +65,10 @@ export function DownloadApp() {
     
     
     `
+
+export function DownloadApp() {
+
+    
     
     return (<>
         <MainContainer>

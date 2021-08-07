@@ -1,12 +1,7 @@
 import styled from 'styled-components'
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
-
-
-
-export function Card(props) {
-
-    const Card = styled.div`
+const ContCard = styled.div`
     *{
         margin: 0;
         padding: 0;
@@ -50,14 +45,19 @@ export function Card(props) {
     `
 
 
+export function Card(props) {
+
+    
+
+
     return (
-        <Card>
-            <img src={props.img} alt="" />
+        <ContCard>
+            <img src={props.img} alt="jgjj" />
             <div>
                 <p className="head">{props.title}</p>
             <p className="link">Know more <FaAngleDoubleRight/></p>
             </div>
-            </Card>
+            </ContCard>
         
     )
 }

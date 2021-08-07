@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
-
-export function CardItem() {
-
-    const Card = styled.div`
+ const Card = styled.div`
 
     *{
         margin: 0;
@@ -54,6 +51,10 @@ export function CardItem() {
         color: #212121;
     }
     `
+
+export function CardItem() {
+
+   
     return (
         <Card>
             <img src="https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/challenges/8679952468.jpg" alt="" />
