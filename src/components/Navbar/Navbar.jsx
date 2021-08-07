@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-// import styles from './Navbar.module.css'
 import { FiMenu } from 'react-icons/fi';
 import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
 import { SimpleMenu } from './User'
 import { Currency } from './Currancy'
-import './NabarStyle.css'
 
 
 const style1 = {
