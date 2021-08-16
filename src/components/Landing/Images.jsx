@@ -1,4 +1,4 @@
-export default [
+export const Images = [
     {
         "img":"https://d2aq6dqxahe4ka.cloudfront.net/themes/front/page/images/home-page/Homepage-Banner_Oxygen-Cylinder.jpg",
         "text":'Make breathing easier. Donate oxygen cylinders & Covid-19 essentials.'
